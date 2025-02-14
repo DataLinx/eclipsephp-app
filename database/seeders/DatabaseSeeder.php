@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
         // Assign user to the main site
         $user->sites()->attach(Site::all());
 
-//        $user->assignRole('super_admin')->save();
+        // $user->assignRole('super_admin')->save();
 
         // Create an additional batch of users
         User::factory(10)->create();
