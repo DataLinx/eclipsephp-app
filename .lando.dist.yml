@@ -1,0 +1,38 @@
+name: eclipse-app
+recipe: laravel
+config:
+  webroot: public
+  php: '8.3'
+  via: nginx
+  database: mariadb:10.11
+services:
+  appserver:
+    type: php:custom
+    xdebug: "debug,develop,coverage"
+    overrides:
+      image: slimdeluxe/php:8.3-v1.0
+  database:
+    creds:
+      database: eclipse
+      user: developer
+      password: developer
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+    database:
+      type: mariadb:10.11
+proxy:
+  pma:
+    - pma.eclipse-app.lndo.site
+tooling:
+  test:
+    service: appserver
+    description: Run tests
+    cmd: "composer test"
+  format:
+    service: appserver
+    description: Fix code style issues
+    cmd: "composer format"
+  npm:
+    service: appserver
