@@ -1,4 +1,8 @@
+# 1. Keep lines sorted alphabetically in this file
+# 2. Do not add OS or IDE specific lines here — do it in the global .gitignore: https://gist.github.com/subfuzion/db7f57fff2fb6998a16c
+# -----------------------
 /.phpunit.cache
+/build
 /node_modules
 /public/build
 /public/hot
@@ -9,15 +13,9 @@
 .env
 .env.backup
 .env.production
+.lando.local.yml
 .phpactor.json
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
+auth.json
 npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+phpunit.xml
