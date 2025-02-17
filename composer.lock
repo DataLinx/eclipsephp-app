@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2462d4b68a8e0e37beddf7b42d753854",
+    "content-hash": "1bdf44da334ab9e4b35f65d38bb67753",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -734,16 +734,16 @@
         },
         {
             "name": "danharrin/livewire-rate-limiting",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danharrin/livewire-rate-limiting.git",
-                "reference": "18680be2b4d3d901d8e453560f77810145492b34"
+                "reference": "003817754b11f7189b9bd1252c27f2fbb4505a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danharrin/livewire-rate-limiting/zipball/18680be2b4d3d901d8e453560f77810145492b34",
-                "reference": "18680be2b4d3d901d8e453560f77810145492b34",
+                "url": "https://api.github.com/repos/danharrin/livewire-rate-limiting/zipball/003817754b11f7189b9bd1252c27f2fbb4505a2d",
+                "reference": "003817754b11f7189b9bd1252c27f2fbb4505a2d",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +784,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-22T14:01:35+00:00"
+            "time": "2025-02-14T10:47:35+00:00"
         },
         {
             "name": "datalinx/php-utils",
@@ -1377,10 +1377,16 @@
         {
             "name": "eclipsephp/core",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataLinx/eclipsephp-core.git",
+                "reference": "d9ed6a079edcbf491f03eed594c02cde51a1b88e"
+            },
             "dist": {
-                "type": "path",
-                "url": "/opt/php/packages/eclipsephp/core",
-                "reference": "a7d116fc3ac40233c3051c7457965425278f6359"
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataLinx/eclipsephp-core/zipball/d9ed6a079edcbf491f03eed594c02cde51a1b88e",
+                "reference": "d9ed6a079edcbf491f03eed594c02cde51a1b88e",
+                "shasum": ""
             },
             "require": {
                 "bezhansalleh/filament-language-switch": "^3.1",
@@ -1398,6 +1404,7 @@
             "require-dev": {
                 "orchestra/testbench": "^9.9"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1409,21 +1416,11 @@
             "autoload": {
                 "psr-4": {
                     "Eclipse\\Core\\": "src/",
-                    "Eclipse\\Core\\Database\\Factories\\": "database/factories/",
-                    "Eclipse\\Core\\Database\\Seeders\\": "database/seeders/"
+                    "Eclipse\\Core\\Database\\Seeders\\": "database/seeders/",
+                    "Eclipse\\Core\\Database\\Factories\\": "database/factories/"
                 }
             },
-            "scripts": {
-                "format": [
-                    "vendor/bin/pint"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "post-root-package-install": [
-                    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1436,13 +1433,15 @@
             "description": "Core package for the Eclipse platform",
             "homepage": "https://github.com/datalinx/eclipsephp-core",
             "keywords": [
-                "eclipse",
+                "Eclipse",
                 "filament",
                 "laravel"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/DataLinx/eclipsephp-core/issues",
+                "source": "https://github.com/DataLinx/eclipsephp-core/tree/main"
+            },
+            "time": "2025-02-17T08:20:25+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5670,16 +5669,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.12.4",
+            "version": "11.12.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "b80816212113f58cdf5a0bdc469b125d844e4e79"
+                "reference": "963a5afaad0a9f292afd9501204797d4fd5fde93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/b80816212113f58cdf5a0bdc469b125d844e4e79",
-                "reference": "b80816212113f58cdf5a0bdc469b125d844e4e79",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/963a5afaad0a9f292afd9501204797d4fd5fde93",
+                "reference": "963a5afaad0a9f292afd9501204797d4fd5fde93",
                 "shasum": ""
             },
             "require": {
@@ -5687,12 +5686,12 @@
                 "ext-exif": "*",
                 "ext-fileinfo": "*",
                 "ext-json": "*",
-                "illuminate/bus": "^10.0|^11.0",
-                "illuminate/conditionable": "^10.0|^11.0",
-                "illuminate/console": "^10.0|^11.0",
-                "illuminate/database": "^10.0|^11.0",
-                "illuminate/pipeline": "^10.0|^11.0",
-                "illuminate/support": "^10.0|^11.0",
+                "illuminate/bus": "^10.2|^11.0|^12.0",
+                "illuminate/conditionable": "^10.2|^11.0|^12.0",
+                "illuminate/console": "^10.2|^11.0|^12.0",
+                "illuminate/database": "^10.2|^11.0|^12.0",
+                "illuminate/pipeline": "^10.2|^11.0|^12.0",
+                "illuminate/support": "^10.2|^11.0|^12.0",
                 "maennchen/zipstream-php": "^3.1",
                 "php": "^8.2",
                 "spatie/image": "^3.3.2",
@@ -5709,11 +5708,11 @@
                 "ext-pdo_sqlite": "*",
                 "ext-zip": "*",
                 "guzzlehttp/guzzle": "^7.8.1",
-                "larastan/larastan": "^2.7",
+                "larastan/larastan": "^2.7|^3.0",
                 "league/flysystem-aws-s3-v3": "^3.22",
                 "mockery/mockery": "^1.6.7",
-                "orchestra/testbench": "^7.0|^8.17|^9.0",
-                "pestphp/pest": "^2.28",
+                "orchestra/testbench": "^7.0|^8.17|^9.0|^10.0",
+                "pestphp/pest": "^2.28|^3.5",
                 "phpstan/extension-installer": "^1.3.1",
                 "spatie/laravel-ray": "^1.33",
                 "spatie/pdf-to-image": "^2.2|^3.0",
@@ -5763,7 +5762,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.4"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.5"
             },
             "funding": [
                 {
@@ -5775,7 +5774,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-10T09:14:17+00:00"
+            "time": "2025-02-14T13:24:42+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
