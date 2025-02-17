@@ -63,5 +63,10 @@ jobs:
       - name: Install dependencies
         run: composer update --prefer-dist --no-progress --${{ matrix.dependency-version }}
 
+      - name: Prepare app for running tests
+        run: |
+          composer run post-root-package-install
+          composer run post-create-project-cmd
+
       - name: Run test suite
         run: ./vendor/bin/pest --coverage-clover ./coverage.xml
