@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Eclipse\Core\Database\Seeders\CoreSeeder;
-use Eclipse\Core\Database\Seeders\RolesAndPermissionsSeeder;
 use Eclipse\Core\Models\Site;
 use Eclipse\Core\Models\User;
 use Illuminate\Database\Seeder;
@@ -18,17 +17,6 @@ class DatabaseSeeder extends Seeder
     {
         // Core seeder
         $this->call(CoreSeeder::class);
-
-        // Create main site
-        $site = Site::create([
-            'domain' => basename(config('app.url')),
-            'name' => config('app.name'),
-        ]);
-
-        setPermissionsTeamId($site->id);
-
-        // User roles and permissions
-        $this->call(RolesAndPermissionsSeeder::class);
 
         // Create test user with super_admin role
         $user = User::create([

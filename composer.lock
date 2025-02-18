@@ -1380,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DataLinx/eclipsephp-core.git",
-                "reference": "d9ed6a079edcbf491f03eed594c02cde51a1b88e"
+                "reference": "d1b72a60d8ff26ee91c7c58a07bfcff0a13b2d26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DataLinx/eclipsephp-core/zipball/d9ed6a079edcbf491f03eed594c02cde51a1b88e",
-                "reference": "d9ed6a079edcbf491f03eed594c02cde51a1b88e",
+                "url": "https://api.github.com/repos/DataLinx/eclipsephp-core/zipball/d1b72a60d8ff26ee91c7c58a07bfcff0a13b2d26",
+                "reference": "d1b72a60d8ff26ee91c7c58a07bfcff0a13b2d26",
                 "shasum": ""
             },
             "require": {
@@ -1402,7 +1402,8 @@
                 "spatie/laravel-permission": "^6.13"
             },
             "require-dev": {
-                "orchestra/testbench": "^9.9"
+                "orchestra/testbench": "^9.10",
+                "pestphp/pest": "^3.7"
             },
             "default-branch": true,
             "type": "library",
@@ -1441,7 +1442,7 @@
                 "issues": "https://github.com/DataLinx/eclipsephp-core/issues",
                 "source": "https://github.com/DataLinx/eclipsephp-core/tree/main"
             },
-            "time": "2025-02-17T08:20:25+00:00"
+            "time": "2025-02-18T13:39:36+00:00"
         },
         {
             "name": "egulias/email-validator",
