@@ -3,10 +3,7 @@
 namespace Database\Seeders;
 
 use Eclipse\Core\Database\Seeders\CoreSeeder;
-use Eclipse\Core\Models\Site;
-use Eclipse\Core\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,21 +14,5 @@ class DatabaseSeeder extends Seeder
     {
         // Core seeder
         $this->call(CoreSeeder::class);
-
-        // Create test user with super_admin role
-        $user = User::create([
-            'first_name' => 'Test',
-            'last_name' => 'User',
-            'email' => 'test@datalinx.si',
-            'password' => Hash::make('test123'),
-        ]);
-
-        // Assign user to the main site
-        $user->sites()->attach(Site::all());
-
-        // $user->assignRole('super_admin')->save();
-
-        // Create an additional batch of users
-        User::factory(10)->create();
     }
 }
