@@ -12,9 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Filament Shield plugin seeder
-        $this->call(ShieldSeeder::class);
-
         // Core seeder
         $this->call(CoreSeeder::class);
     }
