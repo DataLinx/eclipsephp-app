@@ -10,18 +10,7 @@
 *.php diff=php
 
 # Ignore all development content with "export-ignore".
-/.github export-ignore
-/.husky export-ignore
 /docs export-ignore
-/env export-ignore
-/tests export-ignore
 
-/.editorconfig export-ignore
 /.gitattributes export-ignore
-/.gitignore export-ignore
-/.lando.dist.yml export-ignore
-/.php-cs-fixer.dist.php export-ignore
-/commitlint.config.js export-ignore
 /package-lock.json export-ignore
-/phpunit.xml export-ignore
-/phpunit.xml.dist export-ignore
