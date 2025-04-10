@@ -16,6 +16,9 @@ services:
       - php artisan migrate:fresh --seed
       - npm install
       - npm run build
+    ports:
+      # Port forwarding for "npm run dev"
+      - 3009:3009
   database:
     creds:
       database: eclipse
