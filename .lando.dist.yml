@@ -11,7 +11,7 @@ services:
     type: php:custom
     xdebug: "debug,develop,coverage"
     overrides:
-      image: slimdeluxe/php:8.3-v1.0
+      image: slimdeluxe/php:8.3-v1.1
     run:
       - php artisan migrate:fresh --seed
       - npm install
