@@ -17,6 +17,13 @@ services:
     xdebug: "debug,develop,coverage"
     overrides:
       image: slimdeluxe/php:8.3-v1.1
+    build_as_root:
+      - apt-get install supervisor -y
+      - cp -f /app/.lando/entrypoint.sh /usr/local/bin/docker-php-entrypoint
+      - cp -f /app/.lando/horizon.conf /etc/supervisor/conf.d/horizon.conf
+    run_as_root:
+      - service supervisor start
+      - supervisorctl start horizon:*
     run:
       # These commands run when the app is rebuilt
       - php artisan migrate:fresh --seed
