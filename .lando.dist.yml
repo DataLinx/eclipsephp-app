@@ -39,6 +39,10 @@ services:
       - database
     database:
       type: mariadb:10.11
+  typesense:
+    type: typesense:28.0
+    portforward: 8108
+    apiKey: abc
 proxy:
   pma:
     - pma.eclipse-app.lndo.site
