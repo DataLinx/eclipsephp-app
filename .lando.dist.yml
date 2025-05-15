@@ -49,6 +49,7 @@ proxy:
 events:
   post-start:
     - sudo service supervisor start
+    - php artisan telescope:prune
 tooling:
   test:
     service: appserver
