@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/eclipsephp-app/',
   title: "Eclipse documentation",
   description: "Documentation for Eclipse PHP app",
-  head: [['link', { rel: 'icon', href: '/logo-icon-only.svg' }]],
+  head: [['link', { rel: 'icon', href: './logo-icon-only.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: './logo-icon-only.svg',
