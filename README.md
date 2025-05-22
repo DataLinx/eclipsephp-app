@@ -1,6 +1,6 @@
 <div style="text-align: center">
 
-<img src="docs/assets/logo.svg" title="Eclipse" width="300px" alt="Eclipse"/>
+<img src="docs/public/logo.svg" title="Eclipse" width="300px" alt="Eclipse"/>
 
 [![Tests](https://github.com/DataLinx/eclipsephp-app/actions/workflows/test-runner.yml/badge.svg)](https://github.com/DataLinx/eclipsephp-app/actions/workflows/test-runner.yml)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
@@ -17,4 +17,5 @@ It's being developed by [DataLinx](https://www.datalinx.si/), a company in Slove
 ### This repository
 This repository serves only as the app skeleton/project template and contains as little code as possible. It's a starting point and reference for all Eclipse-based PHP projects.
 
-For further details and documentation please see the [Eclipse Core](https://github.com/DataLinx/eclipsephp-core) repository.
+### Documentation
+For further details and documentation please see the **[Eclipse developer documentation](https://datalinx.github.io/eclipsephp-app/)**.
