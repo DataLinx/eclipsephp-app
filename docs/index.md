@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Introduction
-      link: /introduction
+      link: /introduction/requirements
     - theme: alt
       text: Development
       link: /plugin-development/setting-up

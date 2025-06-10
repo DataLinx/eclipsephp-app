@@ -11,14 +11,16 @@ export default defineConfig({
     logo: './logo-icon-only.svg',
     nav: [
       {text: 'Home', link: '/'},
-      {text: 'Introduction', link: '/introduction'}
+      {text: 'Introduction', link: '/introduction/requirements'},
     ],
 
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          {text: 'Introduction', link: '/introduction'},
+          {text: 'Requirements', link: '/introduction/requirements'},
+          {text: 'Getting started', link: '/introduction/getting-started'},
+          {text: 'Architecture', link: '/introduction/architecture'},
         ]
       },
       {
