@@ -36,6 +36,8 @@ It's being developed by [DataLinx](https://www.datalinx.si/), a company in Slove
 * Domain based multi-tenancy (multi-sites)
 * Multi-language
 * Compatible with standard Laravel and Filament packages
+* Horizon queue workers with supervisor
+* Cron/schedule service
 
 <figure>
     <a href="https://github.com/DataLinx/eclipsephp-app/actions/workflows/test-runner.yml">
