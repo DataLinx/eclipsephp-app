@@ -25,6 +25,7 @@ services:
       - php artisan migrate:fresh --seed
       - npm install
       - npm run build
+      - crontab /app/.lando/cron
     ports:
       # Port forwarding for "npm run dev"
       - "3009:3009"
@@ -49,6 +50,7 @@ proxy:
 events:
   post-start:
     - sudo service supervisor start
+    - sudo service cron start
     - php artisan telescope:prune
 tooling:
   test:
