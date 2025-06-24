@@ -40,6 +40,8 @@ services:
       - database
     database:
       type: mariadb:10.11
+    overrides:
+      image: phpmyadmin
   typesense:
     type: typesense:28.0
     portforward: 8108
