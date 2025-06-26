@@ -1,8 +1,6 @@
 build
-css/hasnayeen
-css/filament-spatie-health
-css/pxlrbt
+css/*
 hot
-js/pxlrbt
+js/*
 storage
 vendor
