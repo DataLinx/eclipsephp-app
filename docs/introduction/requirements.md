@@ -8,7 +8,12 @@
 * Node.js and npm
 
 ## Development
-Although not strictly obligatory, [Lando](https://lando.dev/) is recommended for setting up the Docker containers. All Eclipse packages already ship with a Lando config file.
+Although not strictly obligatory, [Lando](https://lando.dev/) is recommended for setting up the Docker containers. All Eclipse packages already ship with a Lando config file. Lando has separate instructions for installing on [Linux](https://docs.lando.dev/install/linux.html), [macOS](https://docs.lando.dev/install/macos.html) and [Windows](https://docs.lando.dev/install/windows.html).  
+You will also need the [typesense plugin for Lando](https://github.com/typesense/typesense-lando-plugin). To install it, run this command in you terminal:
+
+```shell
+git clone https://github.com/typesense/typesense-lando-plugin ~/.lando/plugins/typesense
+```
 
 If you create the project by forking the app repository and `git clone`-ing, there are no additional requirements. All the tools will be available inside the Lando instance, including node.js and npm.
 
