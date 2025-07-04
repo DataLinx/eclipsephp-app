@@ -29,6 +29,10 @@ services:
     ports:
       # Port forwarding for "npm run dev"
       - "3009:3009"
+  appserver_nginx:
+    scanner:
+      path: /admin/login
+      retry: 5
   database:
     creds:
       database: eclipse
