@@ -4,6 +4,7 @@
 /.phpunit.cache
 /build
 /node_modules
+/packages/*/
 /storage/*.key
 /storage/pail
 /vendor

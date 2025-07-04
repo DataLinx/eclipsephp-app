@@ -79,5 +79,11 @@
                 "laravel/telescope"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*"
+        }
+    ]
 }
