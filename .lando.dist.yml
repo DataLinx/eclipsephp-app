@@ -29,6 +29,7 @@ services:
     ports:
       # Port forwarding for "npm run dev"
       - "3009:3009"
+      - "8080:8080"
   appserver_nginx:
     scanner:
       path: /admin/login
@@ -53,6 +54,9 @@ services:
 proxy:
   pma:
     - pma.eclipse-app.lndo.site
+  appserver:
+    - ws.eclipse-app.lndo.site:8080
+
 events:
   post-start:
     - sudo service supervisor start
@@ -69,3 +73,7 @@ tooling:
     cmd: "composer format"
   npm:
     service: appserver
+  reverb:
+    service: appserver
+    description: Start Reverb WebSocket server
+    cmd: "php artisan reverb:start --host=0.0.0.0 --port=8080"
