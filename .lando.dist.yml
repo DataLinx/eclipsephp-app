@@ -56,7 +56,6 @@ proxy:
     - pma.eclipse-app.lndo.site
   appserver:
     - ws.eclipse-app.lndo.site:8080
-
 events:
   post-start:
     - sudo service supervisor start
