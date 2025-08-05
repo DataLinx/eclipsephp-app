@@ -18,8 +18,8 @@ services:
     overrides:
       image: slimdeluxe/php:8.3-v1.2
     build_as_root:
-      # Copy horizon supervisor config
-      - cp -f /app/.lando/horizon.conf /etc/supervisor/conf.d/horizon.conf
+      # Copy supervisor configs
+      - cp -f /app/.lando/*.conf /etc/supervisor/conf.d/
     run:
       # These commands run when the app is rebuilt
       - php artisan migrate:fresh --seed
@@ -72,7 +72,3 @@ tooling:
     cmd: "composer format"
   npm:
     service: appserver
-  reverb:
-    service: appserver
-    description: Start Reverb WebSocket server
-    cmd: "php artisan reverb:start --host=0.0.0.0 --port=8080"
