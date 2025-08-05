@@ -1,8 +1,8 @@
 <?php
 
-use Eclipse\Core\Models\User;
-use Illuminate\Support\Facades\Broadcast;
-
-Broadcast::channel('Eclipse.Core.Models.User.{id}', function (User $user, $id) {
-    return (int) $user->id === (int) $id;
-});
+/*
+ * **DO NOT DELETE THIS FILE**
+ *
+ * It has to exist, even if empty, and be passed to the withRouting() method in bootstrap/app.php,
+ * otherwise broadcasting is not initialized, and channel routes from packages do not work.
+ */
