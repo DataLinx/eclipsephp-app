@@ -22,6 +22,7 @@ php artisan make:filament-settings-page ManageMyPackage MyPackageSettings
 For **plugin-level settings**, the following should be used:
 * Your service provider should extend our `Eclipse\Common\Foundation\Providers\PackageServiceProvider` class.
 * Your package definition should include a call to the `hasSettings()` method, so that the plugin's settings and settings migrations are auto-discovered.
+* If you want to include the settings page in the default Eclipse Settings cluster to have all settings in one place, add the `getCluster()` method and return our cluster class (see below). You can also use any other cluster.
 
 E.g.:
 
@@ -41,6 +42,12 @@ class MyPackageServiceProvider extends PackageServiceProvider
         $package->name('my_package')
             ->hasSettings();
     }
+    
+    public static function getCluster(): ?string
+    {
+        return app(CommonPlugin::class)->getSettingsCluster();
+    }
+}
 ```
 
 ### Permissions
