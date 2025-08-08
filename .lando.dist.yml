@@ -16,7 +16,7 @@ services:
       TZ: "Europe/Ljubljana"
     xdebug: "debug,develop,coverage"
     overrides:
-      image: slimdeluxe/php:8.3-v1.2
+      image: slimdeluxe/php:8.3-v1.3
     build_as_root:
       # Copy supervisor configs
       - cp -f /app/.lando/*.conf /etc/supervisor/conf.d/
