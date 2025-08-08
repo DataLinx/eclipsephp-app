@@ -17,6 +17,7 @@ services:
     xdebug: "debug,develop,coverage"
     overrides:
       image: slimdeluxe/php:8.3-v1.2
+      platform: linux/amd64
     build_as_root:
       # Copy supervisor configs
       - cp -f /app/.lando/*.conf /etc/supervisor/conf.d/
@@ -52,11 +53,27 @@ services:
     type: typesense:28.0
     portforward: 8108
     apiKey: abc
+  typesense-dashboard:
+    api: 3
+    type: lando
+    app_mount: false
+    services:
+      image: ghcr.io/bfritscher/typesense-dashboard:latest
+      platform: linux/amd64
+      ports:
+        - "80"
+      volumes:
+        - ./typesense-dashboard-config.json:/srv/config.json:ro
+      restart: unless-stopped
+      user: root
+      command: caddy file-server --root /srv --listen :80
 proxy:
   pma:
     - pma.eclipse-app.lndo.site
   appserver:
     - ws.eclipse-app.lndo.site:8080
+  typesense-dashboard:
+    - typesense.eclipse-app.lndo.site
 events:
   post-start:
     - sudo service supervisor start

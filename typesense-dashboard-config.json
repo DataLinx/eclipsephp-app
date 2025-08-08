@@ -1,0 +1,13 @@
+{
+  "apiKey": "abc",
+  "node": {
+    "host": "typesense",
+    "port": "8108",
+    "protocol": "http",
+    "path": "",
+    "tls": false
+  },
+  "ui": {
+    "hideProjectInfo": false
+  }
+}
