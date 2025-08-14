@@ -63,7 +63,7 @@ services:
       ports:
         - "80"
       volumes:
-        - ./typesense-dashboard-config.json:/srv/config.json:ro
+        - ./.lando/typesense-dashboard-config.json:/srv/config.json:ro
       restart: unless-stopped
       user: root
       command: caddy file-server --root /srv --listen :80
