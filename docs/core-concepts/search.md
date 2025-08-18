@@ -94,5 +94,12 @@ However, when initially setting things up for an existing model with records in 
 Read more about indexing in the Laravel docs [here](https://laravel.com/docs/scout#indexing).
 
 ## Debugging
-To better understand and help you debug any problems you may encounter when implementing search with Typesense, you can use the Typesense Dashboard app that is available for all platforms [here](https://github.com/bfritscher/typesense-dashboard).  
-To connect, use the parameters you specified in your Lando file.
+To better understand and help you debug any problems you may encounter when implementing search with Typesense, you can use the Typesense Dashboard. To access it, click the _Typesense Dashboard_ link in the _Tools_ nav menu.
+When asked for credentials, use the following settings:
+- API Key: same as in your `.env` file (default: `abc`)
+- Protocol: `http`
+- Host: `localhost`
+- Port: `8108`
+- Path: (leave blank)
+
+If you get CORS errors or other access problems, make sure to disable any browser protection, like Brave Shields, for the dashboard URL.
