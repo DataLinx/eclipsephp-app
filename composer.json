@@ -41,6 +41,7 @@
     "require": {
         "php": "^8.3",
         "eclipsephp/core": "dev-main",
+        "laravel/framework": "^12.0",
         "laravel/reverb": "^1.0",
         "laravel/tinker": "^2.9"
     },
