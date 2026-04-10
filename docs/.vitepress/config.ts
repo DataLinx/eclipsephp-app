@@ -29,6 +29,7 @@ export default defineConfig({
           {text: 'Setting up', link: '/plugin-development/setting-up'},
           {text: 'Running tests', link: '/plugin-development/running-tests'},
           {text: 'Debugging', link: '/plugin-development/debugging'},
+          {text: 'Localization', link: '/plugin-development/localization'},
         ]
       },
       {

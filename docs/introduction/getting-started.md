@@ -18,7 +18,7 @@ By doing these few steps you now have a functional Filament app with our Eclipse
 
 ## DNS setup
 When using Lando for local development, the project domain will be hosted at a `*.lndo.site` subdomain.
-If you are happy not happy with this, or if for some reason this does not work for you (e.g. disabled [DNS rebinding](https://docs.lando.dev/help/dns-rebind.html)), we recommend you set up DNSMasq.
+If you are not happy with this, or if for some reason this does not work for you (e.g. disabled [DNS rebinding](https://docs.lando.dev/help/dns-rebind.html)), we recommend you set up DNSMasq.
 ### Linux
 1. Install it:
 - with dnf (Fedora, RHEL...)
